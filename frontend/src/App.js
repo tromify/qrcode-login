@@ -11,7 +11,7 @@ class App extends PureComponent {
     super(props)
 
     this.state = {
-      qrValue: "X"
+      qrValue: "NOTHING TO SCAN"
     }
   }
 
@@ -21,7 +21,7 @@ class App extends PureComponent {
 
   generateToken = () => {
     // get token from backend
-    const backendUrl = "http://localhost:3080/getToken"
+    const backendUrl = "http://localhost:3000/getToken"
     axios.get(backendUrl)
       .then((res) => {
         const data = res.data

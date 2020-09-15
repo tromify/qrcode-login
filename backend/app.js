@@ -3,7 +3,7 @@ const app = express()
 const CryptoJS = require("crypto-js")
 const cors = require("cors")
 
-const port = 3080
+const port = 3000
 
 let browserList = {}
 
